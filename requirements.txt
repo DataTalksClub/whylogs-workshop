@@ -1,0 +1,4 @@
+whylogs
+pybars3
+confluent-kafka
+avro
