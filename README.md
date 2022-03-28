@@ -2,7 +2,7 @@
 
 The code from the whylogs workshop in DataTalks.Club on 29 March 2022
 
-[Whylogs](https://github.com/whylabs/whylogs) - The open source standard for data logging 
+[whylogs](https://github.com/whylabs/whylogs) - The open source standard for data logging 
 (Don't forget to give it a star!)
 
 ## Workshop
