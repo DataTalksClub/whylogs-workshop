@@ -33,6 +33,7 @@ if __name__ == '__main__':
     args = ccloud_lib.parse_args()
     config_file = args.config_file
     topic = args.topic
+    dataset = args.dataset
     conf = ccloud_lib.read_ccloud_config(config_file)
 
     # Create Producer instance
@@ -59,10 +60,10 @@ if __name__ == '__main__':
             print("Produced record to topic {} partition [{}] @ offset {}"
                   .format(msg.topic(), msg.partition(), msg.offset()))
 
-    trip_data_05 = pd.read_csv('green_tripdata_2021-05.csv', low_memory = False)
-    for n in range(len(trip_data_05)):
+    trip_data = pd.read_csv(dataset, low_memory = False)
+    for n in range(len(trip_data)):
         record_key = "trip"
-        row = trip_data_05.iloc[n]
+        row = trip_data.iloc[n]
         record_value = pickle.dumps(row)
         producer.produce(topic, key=record_key, value=record_value, on_delivery=acked)
         print("Producing record: {}\t{}".format(record_key, record_value))
