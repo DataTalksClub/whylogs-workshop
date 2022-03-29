@@ -5,7 +5,12 @@ The code from the whylogs workshop in DataTalks.Club on 29 March 2022
 [whylogs](https://github.com/whylabs/whylogs) - The open source standard for data logging 
 (Don't forget to give it a star!)
 
+
 ## Workshop
+
+
+<center><a href="https://www.youtube.com/watch?v=b6yk9b7A4CQ" target="_blank"><img src="images/thumbnail.jpg" /></a></center>
+
 
 In this hands-on workshop, we’ll learn how to set up a system for monitoring your data pipelines,
 ensuring data quality and detecting changes in your data.
@@ -24,8 +29,6 @@ We’ll cover the following:
 - How to monitor Kafka streaming pipelines with whylogs
 
 By the end of this workshop, you’ll be able to set up such a system yourself.
-
-Register here: https://eventbrite.com/e/293882369077
 
 ## Code 
 
